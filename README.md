@@ -5,6 +5,8 @@ Grid-based algorithms
 * Dijkstra's 
 * A*
 
+<div align="center"><img src="https://user-images.githubusercontent.com/49252525/119419636-545c2600-bcc0-11eb-81ec-b30373f3ec96.gif" width="40%" height="40%"/></div>
+
 ## Usage
 In order to use this "game" you need to follow the instructions provided below once you have run the main script. Run the script named as the algorithm you want to test (i.e. a_star.py will execute a search based on A*)
 
