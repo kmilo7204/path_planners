@@ -47,7 +47,7 @@ class Grid:
     def get_cell(self, position: tuple):
         """
         Return the corresponding cell for the screen click
-        
+
         Keyword arguments:
         position -- screen pixel
         """
@@ -67,7 +67,7 @@ class Grid:
     def draw_rectangle(self, cell: tuple, color: tuple):
         """
         Draw and colour the given cell with the given color
-        
+
         Keyword arguments:
         cell -- the cell to be drawn
         color -- the desired color
@@ -80,13 +80,13 @@ class Grid:
         """
         Draw and colour the given cell as an obstacle, this function
         updates the grid inmediately
-        
+
         Keyword arguments:
         position -- screen pixel
         """
 
         cell = self.get_cell(position)
-        
+
         # Empty
         if (self.grid[cell[0]][cell[1]] == 0):
             self.grid[cell[0]][cell[1]] = 1
@@ -96,7 +96,7 @@ class Grid:
         else:
             self.grid[cell[0]][cell[1]] = 0
             self.draw_rectangle(cell, display.BLACK)
-    
+
     def draw_obstacles(self):
         """
         Draw the desired obstacles, this is mainly used when
@@ -110,11 +110,11 @@ class Grid:
                 else:
                     self.draw_rectangle((i, j), display.GRAY)
 
-    
+
     def draw_start(self, cell: tuple):
         """
         Draw and colour the start cell with honey colour
-        
+
         Keyword arguments:
         cell -- the cell to be drawn
         """
@@ -124,7 +124,7 @@ class Grid:
     def draw_end(self, cell: tuple):
         """
         Draw and colour the end cell with blue colour
-        
+
         Keyword arguments:
         cell -- the cell to be drawn
         """
@@ -134,7 +134,7 @@ class Grid:
     def draw_path(self, path_ls: list, explored_ls: list):
         """
         Draw the path from the end to the goal
-        
+
         Keyword arguments:
         path_ls -- the list with the desired path
         explored_ls -- the list with the explored cells
